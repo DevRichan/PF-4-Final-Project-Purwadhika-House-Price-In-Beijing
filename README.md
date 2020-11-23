@@ -19,7 +19,12 @@
 - Build machine learning to predict house prices in beijing
 
 ### III. Work Steps : 
-- <b> Data Preparation -> Exploratory Data Analysis -> Modelling
+- <b> Data Preparation :
+   - Column I Check (Checking Column and Column related Data)
+   - Converting Categorical Numeric Values to Strings.
+   - Fill in the missing values
+   
+- Exploratory Data Analysis -> Modelling
 
 
 
