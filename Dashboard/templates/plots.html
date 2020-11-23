@@ -1,0 +1,124 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br>
+<center><H1> Subjects Affecting House Prices </H1></center>
+<br>
+
+
+
+
+<div>
+    <hr/>
+    <h4 class="mt-2 mb-0">House Price Development</h4>
+    <hr/>
+    <div class="chart" id="grow">
+    </div>
+    <p>Y is the price</p>
+    <hr/>
+</div>
+
+
+<div>
+    <hr/>
+    <h4 class="mt-2 mb-0">Price Differences by District</h4>
+    <hr/>
+    <div class="chart" id="district">
+    </div>
+    <p>There is a difference in the average house price per district, but it is not too big. District J is the district with the highest average house price at an average price of ¥ 395K . and district M is the district with the cheapest average price.</p>
+    <hr/>
+</div>
+
+
+<div class="row">
+
+    <div class="col-md-6">
+        <hr/>
+        <h4 class='mt-2 mb-0'>Price Differences by Building Type</h4>
+        <hr/>
+        <div class="chart mt-0" id='build'>
+        </div>
+        <p>There are differences in house prices based on the type of house, but the difference is not too big, the bungalow type is the cheapest type of house on the market. Meanwhile, the house with the highest average price was a plate and tower combination type house with an average price of ¥ 310K</p>
+    </div>
+
+    <div class="col-md-6">
+        <hr/>
+        <h4 class="mt-2 mb-0">Price Differences by Renovation Condition</h4>
+        <hr/>
+        <div class="chart" id='renovation'>
+        </div>
+        <p>The average price of a house with 4 types of renovations is different but not too big. the renovation type including other is the cheapest renovation type, while the hardcover renovation type is the most expensive renovation type with an average price of ¥ 348K</p>
+    </div>
+</div>
+
+<div>
+    <hr/> 
+    <h4 class="mt-2 mb-0">Price Differences by Structure Building</h4>
+    <hr/>
+    <div class="chart" id="structure">
+    </div>
+    <p>The average house price based on the building structure has a difference but is not too big, the price of a house with a composite steel building structure is the most expensive building structure with an average house price of ¥ 320K </p>
+</div>
+
+
+<div class="row">
+
+    <div class="col-md-6">
+        <hr/>
+        <h4 class='mt-2 mb-0'>House Price Differences by Distance to Subway</h4>
+        <hr/>
+        <div class="chart mt-0" id='subway'>
+        </div>
+        <p>The price of houses near the subway is more expensive than those that are not. in non-parametric tests this difference is not very significant (*Exploratory Data Analysis Notebook)</p>
+    </div>
+
+    <div class="col-md-6">
+        <hr/>
+        <h4 class="mt-2 mb-0">Price Differences by Elevator</h4>
+        <hr/>
+        <div class="chart" id='elevator'>
+        </div>
+        <p>The price of a house that has an elevator is higher than that which doesn't. in non-parametric tests this difference is not very significant (*Exploratory Data Analysis Notebook)</p>
+    </div>
+</div>
+
+<div>
+    <hr/> 
+    <h4 class="mt-2 mb-0">Price Differences by Build Time</h4>
+    <hr/>
+    <div class="chart" id="contime">
+    </div>
+    <p>House prices based on the time they were built, based on the visualized results showing fluctuating prices, the graph has tended to rise in the last 6 years.</p>
+</div>
+
+<!-- <div>
+    <hr/> 
+    <h4 class="mt-2 mb-0">Perbedaan Harga Rumah Berdasarkan Jarak ke Kereta Bawah Tanah</h4>
+    <hr/>
+    <div class="chart" id="subway">
+    </div>
+</div> -->
+
+
+
+
+<script>
+    var district = {{data | safe}}
+    var build = {{data2 | safe}}
+    var renovation = {{data3 | safe}} 
+    var structure = {{data4 | safe}} 
+    var grow = {{data5 | safe}} 
+    var contime = {{data6 | safe}} 
+    var subway = {{data7 | safe}} 
+    var elevator = {{data8 | safe}} 
+    Plotly.plot("district",district)
+    Plotly.plot("build",build)
+    Plotly.plot("renovation",renovation) 
+    Plotly.plot("structure",structure)
+    Plotly.plot("grow",grow)  
+    Plotly.plot("contime",contime) 
+    Plotly.plot("subway",subway) 
+    Plotly.plot("elevator",elevator) 
+</script>
+
+{% endblock body %} 

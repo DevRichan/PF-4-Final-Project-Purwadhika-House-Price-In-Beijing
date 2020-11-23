@@ -1,0 +1,28 @@
+
+
+{% extends 'layout.html' %}
+{% block body %}
+<br>
+<h3> Result prediction is : ¥ {{hasil_prediction}} K</h3>
+<!-- <h3> Result prediction is : {{feature}}</h3> -->
+<br>
+<table class="table table-striped" > 
+    <thead>
+        <tr>
+            {% for item in feature.index %}
+                <th> {{item}}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <thead>
+        <tr>
+            {% for item in feature.values %}
+                <td> {{item}}</td>
+            {% endfor %}
+        </tr>
+    </thead>
+
+    
+</table>
+
+{% endblock body %}

@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br>
+<center><H1> Territory and Population</H1></center>
+<br>
+
+
+<div>
+    <h4 class="mt-2 mb-0">Number of Regions per District</h4>
+    <div class="chart" id="district">
+    </div>
+    <p>Each district has several small areas, here is a graph depicting the number of areas per district from smallest to largest. District G is the district with the most areas</p>
+</div>
+<hr>
+<div>
+    <h4 class="mt-2 mb-0">Population of Each District</h4>
+    <div class="chart" id="population">
+    </div>
+    <p>District G is the district with the largest population with a percentage of 30% of the total 271,474,846 population</p>
+</div>
+<hr>
+<div>
+    <h4 class="mt-2 mb-0">Number of Buildings per District</h4>
+    <div class="chart" id="buildtype">
+    </div>
+    <p>District G is the district with the largest number of buildings, I conclude that district G is the district with the highest building density.</p>
+</div>
+<hr>
+
+<script>
+    var district = {{data | safe}}
+    var population = {{data2 | safe}}
+    var buildtype = {{data3 | safe}}
+   
+    Plotly.plot("district",district) 
+    Plotly.plot("population",population)
+    Plotly.plot("buildtype",buildtype)
+  
+</script>
+
+{% endblock body %} 

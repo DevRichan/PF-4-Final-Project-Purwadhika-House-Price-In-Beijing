@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        {% block body %}
+        <div class='container pt 5'>
+            <br>
+            <center><h3>Prediction House Price</h3></center>
+            <hr>
+            <div class='row justify-content-center'>
+                <form action='/prediction' method="POST">
+                    <!-- square -->
+                    <input type="number" step="any" name="square" class="form-control form-control-sm mt-2"  placeholder="Square m2" required>
+                    
+                    <!-- livingroom -->
+                    <input type="number" name="livingRoom" class="form-control form-control-sm mt-2"  min='0' placeholder="Number of Living Room" required>
+                    <!-- drawing room -->
+                    <input type="number" name="drawingRoom" class="form-control form-control-sm mt-2" min='0' placeholder="Number of Drawing Room" required>
+                    <!-- kitchen -->
+                    <input type="number" name="kitchen" class="form-control form-control-sm mt-2"  min='0' placeholder="Number of Kitchen" required>
+                    <!-- bathroom -->
+                    <input type="number" name="bathRoom" class="form-control form-control-sm mt-2"  min='0' placeholder="Number of Bathroom" required>
+                    <!-- floor -->
+                    <input type="number" name="floor" class="form-control form-control-sm mt-2"  min='0' placeholder="Number of Floor"required>
+                    <br>
+                    <!-- buildtype -->
+                    <select class='form-control form-control-sm' name="buildingType" required>
+                        <option value="" disabled selected>Building Type</option>
+                        {% for item in data_type%}
+                            <option value="{{item}}">{{item}}</option>
+                        {% endfor %}
+                    </select>
+                    <br>
+
+                    <!-- buildtype -->
+                    <select class='form-control form-control-sm' name="constructionTime" required>
+                        <option value="" disabled selected>Construction Time</option>
+                        {% for item in data_time%}
+                            <option value="{{item}}">{{item}}</option>
+                        {% endfor %}
+                    </select>
+                    <br>
+
+                    <!-- renov condition -->
+                    <select class='form-control form-control-sm' name="renovationCondition" required >
+                        <option value="" disabled selected>Renovation Condition</option>
+                        {% for item in datarenov%}
+                            <option value="{{item}}">{{item}}</option>
+                        {% endfor %}
+                    </select>
+                    <br>
+
+                    <!-- buildstructure -->
+                    <select class='form-control form-control-sm' name="buildingStructure" required>
+                        <option value="" disabled selected>Building Structure</option>
+                        {% for item in data_structure%}
+                            <option value="{{item}}">{{item}}</option>
+                        {% endfor %}
+                    </select>
+                    <br>
+
+                    <input type="number" step="any" name="ladderRatio" class="form-control form-control-sm mt-2"  min='0' max="1" placeholder="Ladder Ratio" required>
+                    <br>
+                    <!-- elevator -->
+                    <select class='form-control form-control-sm' name="elevator" required >
+                        <option value="" disabled selected>Elevator</option>
+                        {% for item in data_elevator%}
+                            <option value="{{item}}">{{item}}</option>
+                        {% endfor %}
+                    </select>
+                    <br>
+                    <!-- subway -->
+                    <select class='form-control form-control-sm' name="subway" required>
+                        <option value="" disabled selected>Subway</option>
+                        {% for item in data_subway%}
+                            <option value="{{item}}">{{item}}</option>
+                        {% endfor %}
+                    </select>
+                    <br>
+                    <!--distrik -->
+                    <select class='form-control form-control-sm' name="district" required >
+                        <option value="" disabled selected>Pilih Distrik</option>
+                        {% for item in data_distrik%}
+                            <option value="{{item}}">{{item}}</option>
+                        {% endfor %}
+                    </select>
+                    <br>
+
+                    <button type="submit" class="btn btn-success mt-4"> Let's Predict!</button>
+                </form>
+            </div>
+        </div>
+        {% endblock body %}
+    </body>
+</html>
