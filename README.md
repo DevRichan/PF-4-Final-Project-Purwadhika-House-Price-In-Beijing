@@ -20,11 +20,14 @@
 
 ### III. Work Steps : 
 - <b> Data Preparation :
-   - Column I Check (Checking Column and Column related Data)
+   - Peforming Columns I Check (Checking Column and Column related Data)
    - Converting Categorical Numeric Values to Strings.
    - Fill in the missing values
-   
-- Exploratory Data Analysis -> Modelling
+   - Performing Column II Check (Checking Column Data Types) Because there is data missing, so there are several columns whose data types cannot be changed, therefore I checked and changed them again.
+
+- Exploratory Data Analysis 
+
+- Modelling
 
 
 
