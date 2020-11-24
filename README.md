@@ -35,11 +35,21 @@ The dataset can be downloaded at https://www.kaggle.com/ruiqurm/lianjia
   - Machine Learning 1 Notebook files are machine learning files with outlier data, and Machine Learning 2 files are machine learning files whose outlier data is deleted.
 
 
-
 ### Vital Records:
 I have difficulty training the model due to low computer specs, I've tried using Google Colab but the results are the same maybe because I subscribed for free. Therefore, the model is not optimal. My advice if you want to continue this work use a random forest algorithm and multiply the tuning parameters, or you can try using other algorithms like SVM, KNN etc.
 
-
+### Hasil Modelling :
+No  |  Algoritma  | RMSE |
+------|--------|---------------|
+1 |   Linear Regression Default Parameter |  145.47390826021032 |
+2 |   Ridge Regression Default Parameter |   145.4739284326783 |
+3 |   Lasso Regression Default Parameter |   145.4680170558296 |
+4 |   Decison Tree Regressor Default Parameter |   159.2454346602503 |
+5 |   Decison Tree Regressor with Parameter|   139.41951268165724 |
+6 |   Random Forest Regressor Default Parameter |   126.96117847547191 |
+7 |   Random Forest Regressor with Parameter I |   124.62968428056467 |
+8 |   Random Forest Regressor with Parameter II |   124.3104488455155|
+9 |   Random Forest Regressor with Parameter III |   125.18869710930282|
 
 
 
