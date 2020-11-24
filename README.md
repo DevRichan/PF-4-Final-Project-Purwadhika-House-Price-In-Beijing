@@ -36,7 +36,7 @@ The dataset can be downloaded at https://www.kaggle.com/ruiqurm/lianjia
 
 
 ### Vital Records:
-I have difficulty training the model due to low computer specs, I've tried using Google Colab but the results are the same maybe because I subscribed for free. Therefore, the model is not optimal. My advice if you want to continue this work use a random forest algorithm and multiply the tuning parameters, or you can try using other algorithms like SVM, KNN etc.
+I have difficulty training the model due to low computer specs, I've tried using Google Colab but the results are the same maybe because I subscribed for free. Therefore, the model is not optimal. My advice if you want to continue this work use a random forest algorithm and multiply the tuning parameters, or you can try using other algorithms like SVM, KNN etc. I assume that from the results of my personal analysis, the quality of this data is very influential on the model. Therefore, good data is needed in order to produce a good model
 
 ### Model Training Results :
 This is the result of machine learning training with outliers data, I am not displaying machine learning results whose outliers have been removed because the results are so poor.
