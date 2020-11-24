@@ -68,6 +68,8 @@ Details of model training (Random Forest with Parameter II):
 
 
 ### Dashboard : 
+[Final Project Purwadhika - House Price In Beijing - Ricki Chandra Hidayatullah](https://www.youtube.com/watch?v=abENDgwcclQ&ab_channel=RickiChandraHidayatullah)
+
 
 
 
