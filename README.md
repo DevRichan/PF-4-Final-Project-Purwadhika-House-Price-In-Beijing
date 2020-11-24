@@ -1,5 +1,6 @@
 # Housing price in Beijing
-##### Housing price of Beijing from 2011 to 2017, fetching from Lianjia.com
+### Housing price of Beijing from 2011 to 2017, fetching from Lianjia.com. 
+The dataset can be downloaded at https://www.kaggle.com/ruiqurm/lianjia
 
 ### I. About Beijing : 
 <p align="justify"><b>Beijing</b> is the capital of the People's Republic of China and one of the
