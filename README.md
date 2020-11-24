@@ -63,7 +63,7 @@ Details of model training (Random Forest with Parameter II):
 - Algorithm: Random Forest Regressor
 - Standardized Value: Robust Scaller
 - The training method used: GridSearch CV
-= Best parameters: {'max_depth': None, 'min_samples_leaf': 5, 'min_samples_split': 6, 'n_estimators': 120}
+- Best parameters: {'max_depth': None, 'min_samples_leaf': 5, 'min_samples_split': 6, 'n_estimators': 120}
 
 
 
