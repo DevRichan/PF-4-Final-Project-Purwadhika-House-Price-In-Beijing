@@ -56,13 +56,14 @@ No  |  Algoritma  | RMSE |
 The Random Forest Regressor with Parameter II has the lowest RMSE value compared to other models. It can be seen that the regplot graph shows pretty good results, but this model cannot be said to be optimal. Therefore, I suggest doing model training by adding parameters to the hyperparameter tuning and trying to use another model.
 
 Details of model training (Random Forest with Parameter II):
-Amount of data: 316448
-Training data: 90%
-Test Data: 10%
-Algorithm: Random Forest Regressor
-Standardized Value: Robust Scaller
-The training method used: GridSearch CV
-Best parameters: {'max_depth': None, 'min_samples_leaf': 5, 'min_samples_split': 6, 'n_estimators': 120}
+
+- Amount of data: 316448
+- Training data: 90%
+- Test Data: 10%
+- Algorithm: Random Forest Regressor
+- Standardized Value: Robust Scaller
+- The training method used: GridSearch CV
+= Best parameters: {'max_depth': None, 'min_samples_leaf': 5, 'min_samples_split': 6, 'n_estimators': 120}
 
 
 
