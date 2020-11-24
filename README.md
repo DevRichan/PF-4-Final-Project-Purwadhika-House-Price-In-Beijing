@@ -70,7 +70,7 @@ Details of model training (Random Forest with Parameter II):
 ### Dashboard : 
 [Final Project Purwadhika - House Price In Beijing - Ricki Chandra Hidayatullah](https://www.youtube.com/watch?v=abENDgwcclQ&ab_channel=RickiChandraHidayatullah)
 
-- If you want to run the dashboard copy the file at this [link](https://drive.google.com/file/d/17on7Le0vgUab9hgOT6qj26NKLz0M5g-t/view?usp=sharing) , place it in the dashboard file, and run app.py!
+If you want to run the dashboard copy the file at this [link](https://drive.google.com/file/d/17on7Le0vgUab9hgOT6qj26NKLz0M5g-t/view?usp=sharing) , place it in the dashboard file, and run app.py!
 
 
 
