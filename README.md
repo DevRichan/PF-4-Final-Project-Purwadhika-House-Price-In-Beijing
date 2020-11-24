@@ -38,7 +38,7 @@ The dataset can be downloaded at https://www.kaggle.com/ruiqurm/lianjia
 ### Vital Records:
 I have difficulty training the model due to low computer specs, I've tried using Google Colab but the results are the same maybe because I subscribed for free. Therefore, the model is not optimal. My advice if you want to continue this work use a random forest algorithm and multiply the tuning parameters, or you can try using other algorithms like SVM, KNN etc.
 
-### Hasil Modelling :
+### Model Training Results :
 No  |  Algoritma  | RMSE |
 ------|--------|---------------|
 1 |   Linear Regression Default Parameter |  145.47390826021032 |
