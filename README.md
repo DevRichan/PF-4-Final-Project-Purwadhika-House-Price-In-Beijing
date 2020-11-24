@@ -39,6 +39,8 @@ The dataset can be downloaded at https://www.kaggle.com/ruiqurm/lianjia
 I have difficulty training the model due to low computer specs, I've tried using Google Colab but the results are the same maybe because I subscribed for free. Therefore, the model is not optimal. My advice if you want to continue this work use a random forest algorithm and multiply the tuning parameters, or you can try using other algorithms like SVM, KNN etc.
 
 ### Model Training Results :
+This is the result of machine learning training with outliers data, I am not displaying machine learning results whose outliers have been removed because the results are so poor.
+
 No  |  Algoritma  | RMSE |
 ------|--------|---------------|
 1 |   Linear Regression Default Parameter |  145.47390826021032 |
@@ -51,9 +53,22 @@ No  |  Algoritma  | RMSE |
 8 |   Random Forest Regressor with Parameter II |   124.3104488455155|
 9 |   Random Forest Regressor with Parameter III |   125.18869710930282|
 
+The Random Forest Regressor with Parameter II has the lowest RMSE value compared to other models. It can be seen that the regplot graph shows pretty good results, but this model cannot be said to be optimal. Therefore, I suggest doing model training by adding parameters to the hyperparameter tuning and trying to use another model.
+
+Details of model training (Random Forest with Parameter II):
+Amount of data: 316448
+Training data: 90%
+Test Data: 10%
+Algorithm: Random Forest Regressor
+Standardized Value: Robust Scaller
+The training method used: GridSearch CV
+Best parameters: {'max_depth': None, 'min_samples_leaf': 5, 'min_samples_split': 6, 'n_estimators': 120}
+
 
 
 ### Dashboard : 
+
+
 
 
 
