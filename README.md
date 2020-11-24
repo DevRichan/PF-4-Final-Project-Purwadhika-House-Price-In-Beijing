@@ -30,7 +30,9 @@
   - Correlation of Other Columns with Column Target (TotalPrice) / subject that affects the price
   
 - <b> Modelling
-  - In this modeling, two jobs are carried out, namely data with outliers and data without outliers, and using 5 machine learning algorithms along with hyperparameter tuning. At the time of tuning I had problems, namely low computer specs, and Google Colab which was always an error due to the many tuning parameters and data, so I divided the random forest tuning into 3 parts.
+  - In this modeling, two jobs are carried out, namely data with outliers and data without outliers, and using 5 machine learning algorithms along with hyperparameter tuning. At the time of tuning I had problems, namely low computer specs, and Google Colab which was always an error due to the many tuning parameters and data, so I divided the random forest tuning into 3 parts. 
+  - Machine Learning 1 Notebook files are machine learning files with outlier data, and Machine Learning 2 files are machine learning files whose outlier data is deleted.
+
 
 
 
