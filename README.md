@@ -23,12 +23,12 @@ The dataset can be downloaded at https://www.kaggle.com/ruiqurm/lianjia
 - **Data Preparation :**
    - Peforming Columns I Check (Checking Column and Column related Data)
    - Converting Categorical Numeric Values to Strings.
-   - Fill in the missing values
+   - Fill in The Missing Values
    - Performing Column II Check (Checking Column Data Types) Because there is data missing, so there are several columns whose data types cannot be changed, therefore I checked and changed them again.
 
 - **Exploratory Data Analysis:**
-  - Territorial and population information
-  - Correlation of Other Columns with Column Target (TotalPrice) / subject that affects the price
+  - Territorial and Population Information
+  - Correlation of Other Columns with Column Target (TotalPrice) / Subject That Affects The Price
   
 - **Modelling**
   - In this modeling, two jobs are carried out, namely data with outliers and data without outliers, and using 5 machine learning algorithms along with hyperparameter tuning. At the time of tuning I had problems, namely low computer specs, and Google Colab which was always an error due to the many tuning parameters and data, so I divided the random forest tuning into 3 parts. 
